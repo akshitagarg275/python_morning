@@ -74,7 +74,7 @@
 # print(marks)
 # print(type(marks))
 
-# dictionary -> {key : value}
+# # dictionary -> {key : value}
 
 # user = {
 #     "first_name" : "John",
