@@ -113,6 +113,38 @@ It works on the bits
 
 # print(10 << 2)
 
-print(10 >> 1)
+# print(10 >> 1)
 
-print( 10 >> 2)
+# print( 10 >> 2)
+
+# TODO : Memebership (in)
+
+# nums = [1,2,3,4,5,6]
+
+# print(1 in nums)
+# print(11 not in nums)
+
+# print('j' in "John")
+
+
+# TODO: Identity(is)
+
+# a  = 5
+# print(a , id(a))
+
+# b= 5 
+# print(b , id(b))
+
+# print(a is b)
+
+
+# l1 = [1,2]
+# print("l1 id: ",id(l1))
+
+# l2 = [1,2]
+# print("l2 id: ",id(l2))
+
+# print(l1 is l2)
+
+# l3 = l1
+# print("id l3: ",id(l3))
