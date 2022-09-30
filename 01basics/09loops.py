@@ -83,19 +83,57 @@ and there is no explicit termination
 # 345 -> 3
 # 12345 -> 5
 
-num = int(input("enter a number: "))
-count = 0
+# num = int(input("enter a number: "))
+# count = 0
 
-while num > 0:
-    rem = num % 10
-    count = count + 1
-    num = num // 10
-else:
-    print("No of digits is: ",count)
+# while num > 0:
+#     rem = num % 10
+#     count = count + 1
+#     num = num // 10
+# else:
+#     print("No of digits is: ",count)
 
 # TODO: WAP to add digits in a give num
 # 345 -> 3 + 4 + 5 = 12
 
+# num = int(input("enter a number: "))
+# sum = 0
+
+# while num > 0:
+#     rem = num % 10
+#     sum = sum + rem
+#     num = num // 10
+# else:
+#     print("Sum of digits is: ",sum)
+
+# TODO: WAP to reverse a given no
+# 345  -> 543
+
+# num = int(input("enter the num: "))
+# rev = 0
+
+# while num > 0 :
+#     rem = num % 10
+#     rev = (rev * 10) + rem
+#     print("rev: ",rev)
+#     num = num //10
 
 
+# TODO: WAP to check whether given no is pallindrome or not
+#  121 -> 121
+# 345 -> 543
 
+
+num = int(input("enter the num: "))
+temp = num
+rev = 0
+
+while num > 0 :
+    rem = num % 10
+    rev = (rev * 10) + rem
+    num = num //10
+
+if temp == rev :
+    print("It is a pallindrome")
+else:
+    print("It is not a pallindrome")
