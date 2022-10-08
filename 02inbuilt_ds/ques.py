@@ -8,3 +8,17 @@
 # E -
 # F -
 '''
+
+test_dict = {'a' : [5, 6, 7, 8],
+             'b' : [10, 11, 7, 5],
+             'c' : [6, 12, 10, 8],
+             'd' : [1, 2, 5]}
+output = set()
+for val in test_dict.values():
+    # print(val)
+    for i in val:
+        output.add(i)
+
+print(list(output))
+
+
