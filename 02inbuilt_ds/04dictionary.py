@@ -13,6 +13,9 @@ user = {
     "isPaid" : True
 }
 
+new_dict = dict(uid = "12334" , **user)
+print(new_dict)
+
 # print(user)
 # print(type(user))
 

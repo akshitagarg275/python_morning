@@ -68,11 +68,72 @@ def func(n1 , n2):
     return sum , sub
 
 # print(func(5 , 3))
-ans1 , ans2 = func(5,3)
-print(ans1)
-print(ans2)
+# ans1 , ans2 = func(5,3)
+# print(ans1)
+# print(ans2)
+
+# def is_even(num):
+#     return num%2 ==0 
+
+# if is_even(4):
+#     print("It is even")
+
 # TODO: variable length arguments
 
+# def func(*args):
+    # print(args)
+    # print(type(args))
+    # for i in args:
+    #     print(i)
+
+# func(1,2,3,4,5,6)
+# func(1,2,3)
+
+def func(n1, n2 , *args ,**kwargs):
+    print("n1 is :", n1)
+    print("n2 is :", n2)
+    print("args is :", args)
+    print("kwargs is :", kwargs)
+
+# func(1,2,3,4,5,fname="john")
 # TODO: variable length keyword arguments
+def func(**kwargs):
+    print(kwargs)
+    print(type(kwargs))
+
+# func(fname = "John" , lname= "Doe")
 
 # TODO: Anonymous functions
+
+# def sqr(num):
+#     return num **2
+
+# sqr = lambda num : num**2
+# print(sqr(7))
+
+# is_even = lambda num : num%2==0
+
+# print(is_even(4))
+# print(is_even(47))
+
+# func = lambda num : num**2 if num%2==0 else num**3
+
+# print(func(3))
+# print(func(2))
+
+
+# TODO: map
+
+nums = [2,3,4,5,6]
+
+# sqr_list = list(map(lambda num : num**2 , nums ))
+# print(sqr_list)
+
+#TODO: filter
+# even = list(filter(lambda num : num%2==0 , nums))
+# print(even)
+
+# TODO: reduce
+
+from functools import reduce
+print(reduce(lambda a,b : a+b , nums))
